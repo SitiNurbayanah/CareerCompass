@@ -8,9 +8,9 @@ CareerCompass adalah aplikasi yang dirancang untuk membantu pencari kerja menemu
 
 ## Struktur Proyek
 CareerCompass/
-│ ├── frontend/
-│ ├── backend/
-│ └── machine_learning/
+  │ ├── frontend/
+  │ ├── backend/
+  │ └── machine_learning/
 
 
 ## Persyaratan
@@ -56,7 +56,8 @@ cd ../machine_learning
 pip install -r requirements.txt
 ```
 
-Menjalankan Aplikasi
+### 2. Menjalankan Aplikasi
+
 1. Menjalankan Backend
 Kembali ke direktori backend dan jalankan server:
 
