@@ -1,6 +1,6 @@
 # CareerCompass
 
-CareerCompass adalah aplikasi yang dirancang untuk membantu pencari kerja menemukan pekerjaan yang sesuai dengan keterampilan dan pengalaman mereka. Proyek ini terdiri dari tiga bagian utama:
+CareerCompass adalah sistem yang dirancang untuk membantu pencari kerja menemukan pekerjaan yang sesuai dengan keterampilan dan pengalaman mereka. Proyek ini terdiri dari tiga bagian utama:
 
 - **Frontend**: Antarmuka pengguna yang dibangun dengan React.
 - **Backend**: API yang dibangun dengan Node.js dan Express.
