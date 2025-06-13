@@ -1,0 +1,242 @@
+.kerja {
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.k-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.k-l-item {
+  box-shadow: 0 0 10px 0px rgb(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: var(--white);
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.k-l-item:hover {
+  color: var(--white);
+  background-color: var(--black);
+  transition: 0.3s;
+}
+.l-c-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.l-c-title img {
+  border: 1px solid var(--black-10);
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  object-position: center;
+}
+.l-c-title h5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Maksimal 2 baris */
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.k-l-i-lihat {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  gap: 10px;
+  background-color: var(--white-dark);
+  border-radius: 50px;
+  color: var(--black);
+  transition: 0.3s;
+}
+.k-l-i-lihat-on {
+  width: 100px;
+  transition: 0.3s;
+}
+.k-l-jenis {
+  display: flex;
+  padding: 5px 10px;
+  gap: 10px;
+  background-color: var(--black-10);
+  border-radius: 50px;
+  position: absolute;
+  right: 20px;
+}
+.k-l-jenis-on {
+  background-color: var(--white-dark);
+  color: var(--black);
+}
+/* pengaturan warna huruf */
+.k-l-item-white {
+  color: var(--white);
+}
+#k-l-i-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+#k-l-i-location {
+  display: flex;
+  gap: 10px;
+}
+
+/* _________________________ new */
+.kerja-banner {
+  width: 100%;
+  padding: 20px 10px;
+  border-radius: 20px;
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.kerja-filter img {
+  height: 100%;
+}
+.k-b-search {
+  background-color: var(--white);
+  max-width: 900px;
+  border-radius: 100px;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  gap: 5px;
+}
+.k-b-search img {
+  height: 30px;
+}
+.k-b-search input {
+  width: 100%;
+  font-size: clamp(14px, 1vw, 16px);
+  padding: 0 5px;
+  height: 100%;
+  border: transparent;
+}
+.k-b-s-input {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.k-b-search input:focus {
+  outline: transparent;
+}
+.k-b-filter {
+  max-width: 850px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.k-b-filter select {
+  font-size: clamp(14px, 1vw, 16px);
+  padding: 5px;
+  margin-right: 10px;
+  background-color: var(--white);
+  border: 1px solid var(--black-10);
+  border-radius: 5px;
+  color: var(--black-50);
+}
+.k-b-filter select option {
+  color: var(--black);
+}
+.k-b-filter select:focus {
+  outline: 1px solid var(--blue);
+}
+.k-b-filter button {
+  background-color: transparent;
+  font-size: 16px;
+  border: transparent;
+  color: var(--white);
+  cursor: pointer;
+}
+.k-b-filter button:hover {
+  text-decoration: underline;
+}
+
+.side-wrap {
+  width: 100%;
+  height: 100dvh;
+  backdrop-filter: blur(2px) brightness(70%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  transition: 0.5s;
+}
+.side-wrap-off {
+  pointer-events: none;
+  backdrop-filter: blur(0) brightness(100%);
+  transition: 0.5s;
+}
+@media screen and (width < 1200px) {
+  .k-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (width < 900px) {
+  .k-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (width < 600px) {
+  .k-b-search {
+    flex-direction: column;
+    height: fit-content;
+    border-radius: 20px;
+    padding: 5px;
+    padding-top: 10px;
+    gap: 20px;
+  }
+  .k-b-search img {
+    height: 20px;
+  }
+  .k-b-search button {
+    font-size: 13px;
+    padding: 8px;
+    width: 100%;
+  }
+  .k-b-filter {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  .k-b-filter span {
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+  }
+}
+@media screen and (width < 650px) {
+  .k-list {
+    grid-template-columns: 1fr;
+  }
+}

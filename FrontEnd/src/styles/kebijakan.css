@@ -1,0 +1,16 @@
+.kebijakan {
+  width: 100%;
+  height: fit-content;
+  text-align: justify;
+}
+
+.kebijakan ul {
+  margin-left: 20px;
+}
+.kebijakan ul li p b {
+  width: fit-content;
+  height: fit-content;
+  text-align: start;
+  text-wrap: nowrap;
+  display: inline-block;
+}
